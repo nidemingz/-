@@ -25,7 +25,7 @@ int main()
 	int i=0,j=0,tap=0;
     cin>>file_name;
     cin>>level;
-    ifstream myfile(file_name.c_str());//¶ÁÎÄ¼ş
+    ifstream myfile(file_name.c_str());//è¯»æ–‡ä»¶
 	while(getline(myfile,str))
 	{
 	    istringstream is(str);     
@@ -49,7 +49,7 @@ int main()
 		        	break;
 		        }
 	        }	
-		}//¹Ø¼ü´Ê¼ì²é+switch¡¢case¼ì²é 
+		}//å…³é”®è¯æ£€æŸ¥+switchã€caseæ£€æŸ¥ 
 		
      	if(str.find("else if")!=string::npos)
     	{
@@ -86,13 +86,13 @@ int main()
 				}
 			}
 		}
-	}//if¡ªelse½á¹¹¼ì²é 
+	}//ifâ€”elseç»“æ„æ£€æŸ¥ 
 	
 	cout<<"num= "<<num<<endl;
     if(level>=1) 
 	{
 		cout<<"total num: "<<total_num<<endl;
-	}//µÈ¼¶Ò»	
+	}//ç­‰çº§ä¸€	
 	if(level>=2)
 	{
 		cout<<"switch num: "<<switch_num<<endl;
@@ -102,13 +102,13 @@ int main()
 		    cout<<" "<<case_num[i];
 		} 
 		cout<<endl;
-	}//µÈ¼¶¶ş 
+	}//ç­‰çº§äºŒ 
 	if(level>=3)
 	{
 		cout<<"if-else num: "<<ifelse_num<<endl;
-	}//µÈ¼¶Èı 
+	}//ç­‰çº§ä¸‰ 
 	if(level>=4)
 	{
 		cout<<"if-elseif-else num: "<<if_elseif_else_num;
-	}//µÈ¼¶ËÄ 
+	}//ç­‰çº§å›› 
 }
